@@ -72,7 +72,7 @@ module.exports = {
     proxy: {
       "/api": {
         target: {
-          host: "0.0.0.0",
+          host: "https://blooming-tor-50614.herokuapp.com/",
           protocol: "http:",
           port: 5000
         },
