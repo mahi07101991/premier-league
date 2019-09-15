@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/client/scripts/components/match-details/index.js":
+/*!**************************************************************!*\
+  !*** ./src/client/scripts/components/match-details/index.js ***!
+  \**************************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\src\\client\\scripts\\components\\match-details\\index.js: Unexpected token, expected \";\" (65:11)\n\n\u001b[0m \u001b[90m 63 | \u001b[39m      )\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 64 | \u001b[39m    })\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 65 | \u001b[39m  render() {\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m           \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 66 | \u001b[39m    \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39m\u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mprops\u001b[33m.\u001b[39mmatchDetails) \u001b[36mreturn\u001b[39m \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[33mLoading\u001b[39m\u001b[33m...\u001b[39m\u001b[33m<\u001b[39m\u001b[33m/\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 67 | \u001b[39m    \u001b[36mreturn\u001b[39m (\u001b[0m\n\u001b[0m \u001b[90m 68 | \u001b[39m      \u001b[33m<\u001b[39m\u001b[33mdiv\u001b[39m\u001b[33m>\u001b[39m\u001b[0m\n    at Object.raise (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:6387:17)\n    at Object.unexpected (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:7704:16)\n    at Object.semicolon (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:7686:40)\n    at Object.parseExpressionStatement (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:10435:10)\n    at Object.parseStatementContent (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:10034:19)\n    at Object.parseStatement (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:9900:17)\n    at Object.parseBlockOrModuleBlockBody (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:10476:25)\n    at Object.parseBlockBody (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:10463:10)\n    at Object.parseBlock (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:10447:10)\n    at Object.parseFunctionBody (C:\\Users\\Mahesh\\Desktop\\workshop\\premier-league\\node_modules\\@babel\\parser\\lib\\index.js:9495:24)");
+
+/***/ })
+
+})
+//# sourceMappingURL=main.5b9ee8993eb790ee7fa1.hot-update.js.map
