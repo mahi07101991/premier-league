@@ -26,6 +26,7 @@ class index extends Component {
   }
   componentWillMount() {
     this.props.actions.loadMatches(1);
+    this.props.actions.batsmanScores();
   }
   componentDidMount() {}
   toggleBar = () => {
@@ -114,11 +115,17 @@ class index extends Component {
                   />
                   <Route
                     path={"/dashboard/batsman-score"}
-                    component={BatsmanScore}
+                    render={props => (
+                      <BatsmanScore batsmanScores={this.props.batsmanScores} />
+                    )}
                   />
                   <Route
                     path={"/dashboard/batsman-ranking"}
-                    component={BatsmanRanking}
+                    render={props => (
+                      <BatsmanRanking
+                        batsmanScores={this.props.batsmanScores}
+                      />
+                    )}
                   />
                   <Route
                     path={"/dashboard/team-vs-team"}
@@ -181,11 +188,17 @@ class index extends Component {
                   />
                   <Route
                     path={"/dashboard/batsman-score"}
-                    component={BatsmanScore}
+                    render={props => (
+                      <BatsmanScore batsmanScores={this.props.batsmanScores} />
+                    )}
                   />
                   <Route
                     path={"/dashboard/batsman-ranking"}
-                    component={BatsmanRanking}
+                    render={props => (
+                      <BatsmanRanking
+                        batsmanScores={this.props.batsmanScores}
+                      />
+                    )}
                   />
                   <Route
                     path={"/dashboard/team-vs-team"}
@@ -229,7 +242,8 @@ const mapStateToProps = state => {
     totalMatches: state.totalMatches,
     pageNumber: state.page,
     overview: state.overview,
-    matchDetails: state.matchDetails
+    matchDetails: state.matchDetails,
+    batsmanScores: state.batsmanScores
   };
 };
 

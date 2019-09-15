@@ -33,7 +33,6 @@ class index extends Component {
     this.props.auth.logout();
   }
   searchMatches = () => {
-    debugger;
     let value = this.search.current.value;
     if (this.search.current.value == "") return false;
     this.props.searchMatches(value);

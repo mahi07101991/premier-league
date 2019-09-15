@@ -18,9 +18,7 @@ class index extends PureComponent {
       { path: "/dashboard/manage-team", title: "Manage Team" }
     ];
   }
-  componentDidMount() {
-    debugger;
-  }
+  componentDidMount() {}
   goToPage = path => {
     window.innerWidth < 980 && this.props.hideSideBar();
     if (path === "/dashboard/overview") this.props.loadMatches();

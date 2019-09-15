@@ -82,13 +82,14 @@ class index extends Component {
     });
   };
   render() {
-    if (!this.props.matchDetails) return <div>Loading...</div>;
+    if (!this.props.matchDetails) {
+      return <div>Loading...</div>;
+    }
     return (
       <div>
-        <h2
-          className="team-title"
-          style={{ border: "none" }}
-        >{`${this.props.matchDetails[0].batting_team} - ${this.props.matchDetails[0].bowling_team}`}</h2>
+        <h2 className="team-title" style={{ border: "none" }}>
+          {`${this.props.matchDetails[0].batting_team} - ${this.props.matchDetails[0].bowling_team}`}
+        </h2>
         <table className="table table-bordered">
           <thead>
             <tr className="heading-main">

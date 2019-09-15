@@ -2,11 +2,11 @@ let defaultState = {
   matches: [],
   deliveries: [],
   page: 0 + 1,
-  overview: true
+  overview: true,
+  batsmanScores: null
 };
 
 function action(state = defaultState, action) {
-  debugger;
   switch (action.type) {
     case "LOAD_MATCHES":
       return {
@@ -20,7 +20,6 @@ function action(state = defaultState, action) {
     case "LOAD_DELIVERIES":
       return { ...state, deliveries: action.deliveries };
     case "INC_MATCHES":
-      debugger;
       return {
         ...state,
         page: state.page + 1,
@@ -30,7 +29,6 @@ function action(state = defaultState, action) {
         overview: action.overview
       };
     case "DEC_MATCHES":
-      debugger;
       return {
         ...state,
         page: state.page - 1,
@@ -40,10 +38,14 @@ function action(state = defaultState, action) {
         overview: action.overview
       };
     case "MATCHE_DETAILS":
-      debugger;
       return {
         ...state,
         matchDetails: action.data.match
+      };
+    case "LOAD_BATSMAN_SCORES":
+      return {
+        ...state,
+        batsmanScores: action.data.scores
       };
     default:
       return state;

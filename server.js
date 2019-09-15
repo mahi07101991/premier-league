@@ -118,11 +118,9 @@ app.get("/api/matches/find/:value", function(req, res) {
 
 app.get("/api/deliveries/:id", function(req, res) {
   let id = req.params.id;
-  db.collection("deliveries")
-    .find({ match_id: id })
-    .toArray(function(err, result) {
-      res.status(200).send({ match: result });
-    });
+  Deliveries.find({ match_id: id }).then(result => {
+    res.status(200).send({ match: result });
+  });
 });
 
 app.get("/api/batsmanscore", function(req, res) {
@@ -132,6 +130,8 @@ app.get("/api/batsmanscore", function(req, res) {
       {
         $group: {
           _id: "$batsman",
+          over: { $sum: "$over" },
+          ball: { $sum: "$ball" },
           is_super_over: { $sum: "$is_super_over" },
           wide_runs: { $sum: "$wide_runs" },
           bye_runs: { $sum: "$bye_runs" },
@@ -140,7 +140,7 @@ app.get("/api/batsmanscore", function(req, res) {
           penalty_runs: { $sum: "$penalty_runs" },
           batsman_runs: { $sum: "$batsman_runs" },
           extra_runs: { $sum: "$extra_runs" },
-          totalruns: { $sum: "$total_runs" }
+          total_runs: { $sum: "$total_runs" }
         }
       }
     ])
